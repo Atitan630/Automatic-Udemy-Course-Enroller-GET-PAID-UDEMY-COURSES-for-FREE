@@ -4,13 +4,15 @@
 import time
 
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.microsoft import IEDriverManager
 
-from core import Settings, TutorialBarScraper
+from core import Settings
+from core import TutorialBarScraper
 
 settings = Settings()
 
